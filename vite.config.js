@@ -14,7 +14,7 @@ export default defineConfig({
       '/api': {
         target: 'http://10.189.88.109:8000',
         //target: 'http://10.189.88.111:8000',
-        //target: 'http://10.189.88.11:8000',
+        //target: 'http://10.180.12.49',
         changeOrigin: true,
         // 不重写路径，保持完整路径发送到服务器
         // rewrite: (path) => path.replace(/^\/api/, '')

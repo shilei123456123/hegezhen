@@ -62,7 +62,7 @@
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">产品识别代码</div>
-              <div class="english-text">PIN.</div>
+              <div class="english-text">PIN/VIN</div>
             </div>
           </td>
           <td class="value-cell" colspan="18" :style="getCellStyle(1.58)">
@@ -268,7 +268,7 @@
 
 <script setup>
 import { ref, onMounted, watch, computed } from 'vue'
-import { certificateApi } from '../services/certificateApi'
+import { certificateApi } from '../../services/certificateApi'
 import jsPDF from 'jspdf'
 import html2canvas from 'html2canvas'
 

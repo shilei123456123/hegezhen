@@ -56,7 +56,7 @@ async function getToken() {
     const URL_TO_ENV_MAP = {
       'http://10.189.88.111:8000': 'UAT',
       'https://qmsu.xcmg.com': 'UAT',
-      'http://10.189.91.11': 'PROD',
+      'http://10.180.12.49': 'PROD',
       'https://qms.xcmg.com': 'PROD'
     };
     const currentEnv = URL_TO_ENV_MAP[currentUrl] || 'DEV';
