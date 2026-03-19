@@ -212,11 +212,11 @@
             <div class="cell-content_text-top-align">{{ cert.TEL || '─────' }}</div>
           </td>
             <td class="label-cell" colspan="2" :style="getCellStyle(1.58)">
-              <div class="cell-content">
-                <div class="chinese-text">传真</div>
-                <div class="english-text">{{ cert.FAX1}}</div>
-              </div>
-            </td>
+            <div class="cell-content">
+              <div class="chinese-text no-wrap">传真</div>
+              <div class="english-text">{{ cert.FAX1}}</div>
+            </div>
+          </td>
             <td class="value-cell" colspan="6" :style="getCellStyle(1.58)">
               <div class="cell-content_text-top-align">{{ cert.FAX || '─────' }}</div>
             </td>
@@ -565,6 +565,11 @@ onMounted(async () => {
   overflow: hidden; /* 隐藏溢出内容 */
 }
 
+.no-wrap {
+  /* 文本不换行样式 */
+  white-space: nowrap !important;
+}
+
 .chinese-text1 {
   /* 中文文本1 - 定义备注等多行文本的样式 */
   line-height: 1.2; /* 行高1.2，提高可读性 */
@@ -662,6 +667,10 @@ onMounted(async () => {
     margin: 0 !important;
     color: #000 !important;
     text-align: left !important;
+  }
+
+  .no-wrap {
+    white-space: nowrap !important;
   }
 
   .english-text {
