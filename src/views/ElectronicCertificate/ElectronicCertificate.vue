@@ -132,14 +132,14 @@
           <td class="value-cell" colspan="6" :style="getCellStyle(2.37)">
             <div class="cell-content">&nbsp;</div>
           </td>
-          <td class="label-cell" colspan="7" :style="getCellStyle(2.37)">
+          <td class="label-cell" colspan="6" :style="getCellStyle(2.37)">
             <div class="cell-content">
               <div class="chinese-text">质检机构负责人</div>
               <div class="english-text">Quality Inspection</div>
               <div class="english-text">Manager</div>
             </div>
           </td>
-          <td class="value-cell" colspan="5" :style="getCellStyle(2.37)">
+          <td class="value-cell" colspan="6" :style="getCellStyle(2.37)">
             <div class="cell-content">&nbsp;</div>
           </td>
         </tr>
