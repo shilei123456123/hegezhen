@@ -11,7 +11,7 @@
           <td class="label-cell" colspan="12" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">合格证编号</div>
-              <div class="english-text">Certificate No.</div>
+              <div class="english-text">{{ cert.CERTIFICATE_NO1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="12" :style="getCellStyle(1.58)">
@@ -25,7 +25,7 @@
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">产品名称</div>
-              <div class="english-text">Product Name</div>
+              <div class="english-text">{{ cert.PRODUCT_NAME1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="18" :style="getCellStyle(1.58)">
@@ -40,7 +40,7 @@
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">产品型号</div>
-              <div class="english-text">Product Model</div>
+              <div class="english-text">{{ cert.PRODUCT_MODEL1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="18" :style="getCellStyle(1.58)">
@@ -54,7 +54,7 @@
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">产品识别代码</div>
-              <div class="english-text">PIN/VIN</div>
+              <div class="english-text">{{ cert.PIN1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="18" :style="getCellStyle(1.58)">
@@ -68,7 +68,7 @@
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">发动机编号&nbsp;&nbsp;&nbsp;</div>
-              <div class="english-text">Engine No.</div>
+              <div class="english-text">{{ cert.ENGINE_NO1}}</div>
             </div>
           </td>
           <td class="value-cell" colspan="6" :style="getCellStyle(1.58)">
@@ -79,7 +79,7 @@
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">底盘编号</div>
-              <div class="english-text">Chassis No.</div>
+              <div class="english-text">{{ cert.CHASSIS_NO1}}</div>
             </div>
           </td>
           <td class="value-cell" colspan="6" :style="getCellStyle(1.58)">
@@ -96,9 +96,7 @@
                 经检验，本产品符合 {{ cert.INSPECTION_CERTIFICATION }} 规定，确认合格，准予出厂。
               </div>
               <div class="english-text">
-                <div>This is to certify the product has undergone inspection and has been found to conform to</div>
-                <div>{{ cert.INSPECTION_CERTIFICATION }} standard, as such it has been granted factory dispatch
-                  approval.
+                <div>{{ cert.INSPECTION_CERTIFICATION1 }}
                 </div>
               </div>
             </div>
@@ -109,7 +107,7 @@
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">出厂日期</div>
-              <div class="english-text">Delivery Date</div>
+              <div class="english-text">{{ cert.DELIVERY_DATE1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="18" :style="getCellStyle(1.58)">
@@ -124,7 +122,7 @@
           <td class="label-cell" colspan="6" :style="getCellStyle(2.37)">
             <div class="cell-content">
               <div class="chinese-text">检验员</div>
-              <div class="english-text">Inspector</div>
+              <div class="english-text">{{ cert.INSPECTOR1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="6" :style="getCellStyle(2.37)">
@@ -133,8 +131,7 @@
           <td class="label-cell" colspan="6" :style="getCellStyle(2.37)">
             <div class="cell-content">
               <div class="chinese-text">质检机构负责人</div>
-              <div class="english-text">Quality Inspection</div>
-              <div class="english-text">Manager</div>
+              <div class="english-text">{{ cert.QUALITY_INSPECTION_MANAGER1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="6" :style="getCellStyle(2.37)">
@@ -146,7 +143,7 @@
           <td class="label-cell" colspan="12" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">制造许可证编号</div>
-              <div class="english-text">Manufacture License No.</div>
+              <div class="english-text">{{ cert.MANUFACTURE_LICENSE_NO1}}</div>
             </div>
           </td>
           <td class="value-cell" colspan="12" :style="getCellStyle(1.58)">
@@ -158,7 +155,7 @@
           <td class="label-cell" colspan="12" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">制造许可证有效期</div>
-              <div class="english-text">Manufacture License Expiry Date</div>
+              <div class="english-text">{{ cert.MANUFACTURE_LICENSE_EXPIRY_DATE1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="12" :style="getCellStyle(1.58)">
@@ -178,8 +175,7 @@
           <td class="label-cell" colspan="6" :style="getCellStyle(2.37)">
             <div class="cell-content">
               <div class="chinese-text">生产单位名称</div>
-              <div class="english-text">Manufacturer</div>
-              <div class="english-text">Name</div>
+              <div class="english-text">{{ cert.MANUFACTURER_NAME1 }}</div>
             </div>
           </td>
           <td class="value-cell manufacturer-address-value" colspan="18" :style="getCellStyle(2.37)">
@@ -194,8 +190,7 @@
           <td class="label-cell manufacturer-address-label" colspan="6" :style="getCellStyle(2.37)">
             <div class="cell-content">
               <div class="chinese-text">生产单位地址</div>
-              <div class="english-text">Manufacturer</div>
-              <div class="english-text">Address</div>
+              <div class="english-text">{{ cert.MANUFACTURER_ADDRESS1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="18" :style="getCellStyle(2.37)">
@@ -210,25 +205,25 @@
           <td class="label-cell" colspan="3" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">电话</div>
-              <div class="english-text">Tel</div>
+              <div class="english-text">{{ cert.TEL1}}</div>
             </div>
           </td>
-          <td class="value-cell" colspan="5" :style="getCellStyle(1.58)">
+          <td class="value-cell" colspan="6" :style="getCellStyle(1.58)">
             <div class="cell-content_text-top-align">{{ cert.TEL || '─────' }}</div>
           </td>
-          <td class="label-cell" colspan="3" :style="getCellStyle(1.58)">
+            <td class="label-cell" colspan="2" :style="getCellStyle(1.58)">
             <div class="cell-content">
-              <div class="chinese-text">传真</div>
-              <div class="english-text">Fax</div>
+              <div class="chinese-text no-wrap">传真</div>
+              <div class="english-text">{{ cert.FAX1}}</div>
             </div>
           </td>
-          <td class="value-cell" colspan="5" :style="getCellStyle(1.58)">
-            <div class="cell-content_text-top-align">{{ cert.FAX || '─────' }}</div>
-          </td>
-          <td class="label-cell" colspan="4" :style="getCellStyle(1.58)">
+            <td class="value-cell" colspan="6" :style="getCellStyle(1.58)">
+              <div class="cell-content_text-top-align">{{ cert.FAX || '─────' }}</div>
+            </td>
+          <td class="label-cell" colspan="3" :style="getCellStyle(1.58)">
             <div class="cell-content">
               <div class="chinese-text">邮编</div>
-              <div class="english-text">Zip Code</div>
+              <div class="english-text">{{ cert.ZIP_CODE1}}</div>
             </div>
           </td>
           <td class="value-cell" colspan="4" :style="getCellStyle(1.58)">
@@ -240,7 +235,7 @@
           <td class="label-cell" colspan="3" :style="getCellStyle(2.37)">
             <div class="cell-content">
               <div class="chinese-text">备注</div>
-              <div class="english-text">Remark</div>
+              <div class="english-text">{{ cert.REMARK1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="21" :style="getCellStyle(2.37)">
@@ -260,7 +255,7 @@
 
 <script setup>
 import {ref, onMounted, watch} from 'vue'
-import {certificateApi} from '../../services/certificateApi'
+import certificateApi from '@/services/certificateApi'
 
 // 日期格式化函数
 const formatDateCN = (date) => {
@@ -311,19 +306,18 @@ watch(() => props.data, (newData) => {
   }
 }, {deep: true, immediate: true})
 
-const getCertificateDetail = async (id) => {
-  const res = await certificateApi.getCertificateDetail(id)
+const getCertificateDetail = async (id,lauge) => {
+  const res = await certificateApi.getCertificateDetail(id,lauge)
   if (res) {
     return res.data
   }
   return null
 };
 
-const getMultipleCertificateDetails = async (ids) => {
+const getMultipleCertificateDetails = async (ids,lauge) => {
   certificateData.value = [];
-
   for (const id of ids) {
-    const data = await getCertificateDetail(id);
+    const data = await getCertificateDetail(id,lauge);
     if (data) {
       certificateData.value.push(data);
     }
@@ -360,7 +354,7 @@ function getURLParameters(url) {
 
 const printCertificate = async () => {
   window.print();
-
+  await certificateApi.addCertificateDetail(certificateData.value);
   // 提取所有证书ID
   const certificateIds = certificateData.value.map(cert => cert.ID_ || cert.CERTIFICATE_NO);
   if (certificateIds.length > 0) {
@@ -380,20 +374,22 @@ defineExpose({
 
 onMounted(async () => {
   const params = getURLParameters(window.location.href);
-
   if (params.id) {
     const certificateIds = params.id.split(',').map(id => id.trim());
-    await getMultipleCertificateDetails(certificateIds);
-  } else if (props.data) {
-    if (Array.isArray(props.data)) {
-      certificateData.value = props.data;
-    } else if (props.data.ID_) {
-      const data = await getCertificateDetail(props.data.ID_);
-      if (data) {
-        certificateData.value = [data];
+    const lauge = params.lauge
+    await getMultipleCertificateDetails(certificateIds,lauge);
+    if (certificateData.value.length > 1) {
+      const firstCert = certificateData.value[0];
+      const firstNo = firstCert.CERTIFICATE_NO;
+      const match = firstNo.match(/(\d{5})$/);
+      if (match) {
+        let baseNumber = parseInt(match[1], 10);
+        for (let i = 1; i < certificateData.value.length; i++) {
+          baseNumber += 1;
+          const newNumber = baseNumber.toString().padStart(5, '0');
+          certificateData.value[i].CERTIFICATE_NO = firstNo.replace(/\d{5}$/, newNumber);
+        }
       }
-    } else {
-      certificateData.value = [props.data];
     }
   }
 })
@@ -569,6 +565,11 @@ onMounted(async () => {
   overflow: hidden; /* 隐藏溢出内容 */
 }
 
+.no-wrap {
+  /* 文本不换行样式 */
+  white-space: nowrap !important;
+}
+
 .chinese-text1 {
   /* 中文文本1 - 定义备注等多行文本的样式 */
   line-height: 1.2; /* 行高1.2，提高可读性 */
@@ -666,6 +667,10 @@ onMounted(async () => {
     margin: 0 !important;
     color: #000 !important;
     text-align: left !important;
+  }
+
+  .no-wrap {
+    white-space: nowrap !important;
   }
 
   .english-text {

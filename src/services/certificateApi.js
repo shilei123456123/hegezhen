@@ -1,7 +1,7 @@
 import api from './api';
 
 // 证书相关API - 只保留必要的证书详情方法
-export const certificateApi = {
+const certificateApi = {
   // 获取证书详情（通过新的API端点）
   getCertificateDetail: async (id,lauge) => {
     try {
