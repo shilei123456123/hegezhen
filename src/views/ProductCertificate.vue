@@ -220,13 +220,13 @@
             <td class="value-cell" colspan="6" :style="getCellStyle(1.58)">
               <div class="cell-content_text-top-align">{{ cert.FAX || '─────' }}</div>
             </td>
-          <td class="label-cell" colspan="3" :style="getCellStyle(1.58)">
+          <td class="label-cell" colspan="4" :style="getCellStyle(1.58)">
             <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">邮编</div>
               <div class="english-text">{{ cert.ZIP_CODE1}}</div>
             </div>
           </td>
-          <td class="value-cell" colspan="4" :style="getCellStyle(1.58)">
+          <td class="value-cell" colspan="3" :style="getCellStyle(1.58)">
             <div class="cell-content_text-top-align">{{ cert.ZIP_CODE || '─────' }}</div>
           </td>
         </tr>
