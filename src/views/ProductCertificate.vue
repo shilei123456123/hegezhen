@@ -9,13 +9,13 @@
         <tbody>
         <tr>
           <td class="label-cell" colspan="12" :style="getCellStyle(1.58)">
-            <div class="cell-content">
-              <div class="chinese-text">合格证编号</div>
+            <div class="cell-content" style="margin-top: -0.2cm">
+              <div class="chinese-text" >合格证编号</div>
               <div class="english-text">{{ cert.CERTIFICATE_NO1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="12" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="english-text">{{ cert.CERTIFICATE_NO }}</div>
             </div>
           </td>
@@ -23,13 +23,13 @@
 
         <tr>
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">产品名称</div>
               <div class="english-text">{{ cert.PRODUCT_NAME1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="18" :style="getCellStyle(1.58)">
-            <div class="cell-content multi-line">
+            <div class="cell-content multi-line" style="margin-top: -0.2cm">
               <div class="chinese-text">{{ cert.PRODUCT_NAME }}</div>
               <div class="english-text">{{ cert.PRODUCT_NAME_U }}</div>
             </div>
@@ -38,13 +38,13 @@
 
         <tr>
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">产品型号</div>
               <div class="english-text">{{ cert.PRODUCT_MODEL1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="18" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="english-text">{{ cert.PRODUCT_MODEL }}</div>
             </div>
           </td>
@@ -52,13 +52,13 @@
 
         <tr>
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">产品识别代码</div>
               <div class="english-text">{{ cert.PIN1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="18" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="english-text">{{ cert.PIN }}</div>
             </div>
           </td>
@@ -67,7 +67,7 @@
         <tr>
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
             <div class="cell-content">
-              <div class="chinese-text">发动机编号&nbsp;&nbsp;&nbsp;</div>
+              <div class="chinese-text" style="margin-top: -0.2cm">发动机编号&nbsp;&nbsp;&nbsp;</div>
               <div class="english-text">{{ cert.ENGINE_NO1}}</div>
             </div>
           </td>
@@ -78,7 +78,7 @@
           </td>
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
             <div class="cell-content">
-              <div class="chinese-text">底盘编号</div>
+              <div class="chinese-text" style="margin-top: -0.2cm">底盘编号</div>
               <div class="english-text">{{ cert.CHASSIS_NO1}}</div>
             </div>
           </td>
@@ -92,10 +92,10 @@
         <tr>
           <td class="inspection-cell" colspan="24" :style="getCellStyle(2.37)">
             <div class="cell-content">
-              <div class="chinese-text">
+              <div class="chinese-text" style="margin-top: -0.2cm">
                 经检验，本产品符合 {{ cert.INSPECTION_CERTIFICATION }} 规定，确认合格，准予出厂。
               </div>
-              <div class="english-text">
+              <div class="english-text" style="margin-top: 0.2cm">
                 <div>{{ cert.INSPECTION_CERTIFICATION1 }}
                 </div>
               </div>
@@ -105,13 +105,13 @@
 
         <tr>
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">出厂日期</div>
               <div class="english-text">{{ cert.DELIVERY_DATE1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="18" :style="getCellStyle(1.58)">
-            <div class="cell-content multi-line">
+            <div class="cell-content multi-line" style="margin-top: -0.2cm">
               <div class="chinese-text">{{ formatDateCN(cert.DELIVERY_DATE) }}</div>
               <div class="english-text">{{ cert.DELIVERY_DATE_U }}</div>
             </div>
@@ -120,46 +120,46 @@
 
         <tr>
           <td class="label-cell" colspan="6" :style="getCellStyle(2.37)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">检验员</div>
               <div class="english-text">{{ cert.INSPECTOR1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="6" :style="getCellStyle(2.37)">
-            <div class="cell-content">&nbsp;</div>
+            <div class="cell-content" style="margin-top: -0.2cm">&nbsp;</div>
           </td>
           <td class="label-cell" colspan="6" :style="getCellStyle(2.37)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">质检机构负责人</div>
               <div class="english-text">{{ cert.QUALITY_INSPECTION_MANAGER1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="6" :style="getCellStyle(2.37)">
-            <div class="cell-content">&nbsp;</div>
+            <div class="cell-content" style="margin-top: -0.2cm">&nbsp;</div>
           </td>
         </tr>
 
         <tr>
           <td class="label-cell" colspan="12" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">制造许可证编号</div>
               <div class="english-text">{{ cert.MANUFACTURE_LICENSE_NO1}}</div>
             </div>
           </td>
           <td class="value-cell" colspan="12" :style="getCellStyle(1.58)">
-            <div class="cell-content_text-top-align">{{ cert.MANUFACTURE_LICENSE_NO || '────────' }}</div>
+            <div class="cell-content_text-top-align" style="margin-top: -0.2cm">{{ cert.MANUFACTURE_LICENSE_NO || '────────' }}</div>
           </td>
         </tr>
 
         <tr>
           <td class="label-cell" colspan="12" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">制造许可证有效期</div>
               <div class="english-text">{{ cert.MANUFACTURE_LICENSE_EXPIRY_DATE1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="12" :style="getCellStyle(1.58)">
-            <div class="cell-content multi-line">
+            <div class="cell-content multi-line" style="margin-top: -0.2cm">
               <template v-if="cert.MANUFACTURE_LICENSE_EXPIRY_DATE">
                 <div class="chinese-text">{{ formatDateCN(cert.MANUFACTURE_LICENSE_EXPIRY_DATE) }}</div>
                 <div class="english-text">{{ formatDateEN(cert.MANUFACTURE_LICENSE_EXPIRY_DATE) }}</div>
@@ -173,13 +173,13 @@
 
         <tr>
           <td class="label-cell" colspan="6" :style="getCellStyle(2.37)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">生产单位名称</div>
               <div class="english-text">{{ cert.MANUFACTURER_NAME1 }}</div>
             </div>
           </td>
           <td class="value-cell manufacturer-address-value" colspan="18" :style="getCellStyle(2.37)">
-            <div class="cell-content multi-line">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">{{ cert.MANUFACTURER_NAME }}</div>
               <div class="english-text">{{ cert.MANUFACTURER_NAME_U }}</div>
             </div>
@@ -188,13 +188,13 @@
 
         <tr>
           <td class="label-cell manufacturer-address-label" colspan="6" :style="getCellStyle(2.37)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">生产单位地址</div>
               <div class="english-text">{{ cert.MANUFACTURER_ADDRESS1 }}</div>
             </div>
           </td>
           <td class="value-cell" colspan="18" :style="getCellStyle(2.37)">
-            <div class="cell-content multi-line">
+            <div class="cell-content multi-line" style="margin-top: -0.2cm">
               <div class="chinese-text">{{ cert.MANUFACTURER_ADDRESS }}</div>
               <div class="english-text">{{ cert.MANUFACTURER_ADDRESS_U }}</div>
             </div>
@@ -203,7 +203,7 @@
 
         <tr>
           <td class="label-cell" colspan="3" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">电话</div>
               <div class="english-text">{{ cert.TEL1}}</div>
             </div>
@@ -212,7 +212,7 @@
             <div class="cell-content_text-top-align">{{ cert.TEL || '─────' }}</div>
           </td>
             <td class="label-cell" colspan="2" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text no-wrap">传真</div>
               <div class="english-text">{{ cert.FAX1}}</div>
             </div>
@@ -221,7 +221,7 @@
               <div class="cell-content_text-top-align">{{ cert.FAX || '─────' }}</div>
             </td>
           <td class="label-cell" colspan="3" :style="getCellStyle(1.58)">
-            <div class="cell-content">
+            <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">邮编</div>
               <div class="english-text">{{ cert.ZIP_CODE1}}</div>
             </div>
@@ -233,8 +233,8 @@
 
         <tr>
           <td class="label-cell" colspan="3" :style="getCellStyle(2.37)">
-            <div class="cell-content">
-              <div class="chinese-text">备注</div>
+            <div class="cell-content" style="margin-top: -0.2cm">
+              <div class="chinese-text" >备注</div>
               <div class="english-text">{{ cert.REMARK1 }}</div>
             </div>
           </td>
@@ -261,7 +261,10 @@ import certificateApi from '@/services/certificateApi'
 const formatDateCN = (date) => {
   if (!date) return ''
   const d = new Date(date)
-  return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`
+  const year = d.getFullYear()
+  const month = String(d.getMonth() + 1).padStart(2, '0')
+  const day = String(d.getDate()).padStart(2, '0')
+  return `${year}-${month}-${day}`
 }
 
 // 获取当前时间的中文格式
@@ -638,9 +641,9 @@ onMounted(async () => {
   }
 
   .certificate-table {
-    width: 100% !important;
-    height: calc(297mm - 24.7mm - 10mm) !important;
-    margin: -0.5cm 0 0 0 !important;
+    width: 17cm !important;
+    height: 26.3cm !important;
+    margin: 0 !important;
     border-collapse: collapse !important;
     table-layout: fixed !important;
   }
@@ -667,6 +670,8 @@ onMounted(async () => {
     margin: 0 !important;
     color: #000 !important;
     text-align: left !important;
+    white-space: pre-line !important;
+    overflow: hidden !important;
   }
 
   .no-wrap {
@@ -677,9 +682,44 @@ onMounted(async () => {
     font-family: 'Times New Roman', serif !important;
     font-size: 12pt !important;
     line-height: 1.0 !important;
-    margin: 0.15cm 0 0 0 !important;
+    margin: 0 !important;
     color: #000 !important;
     text-align: left !important;
+  }
+
+  .cell-content {
+    padding: 0.2cm 0.3cm !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: left !important;
+    text-align: left !important;
+    overflow: hidden !important;
+    white-space: normal !important;
+  }
+
+  .cell-content_text-top-align {
+    padding: 0cm 0.3cm !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: left !important;
+    text-align: left !important;
+    min-height: 1.58cm !important;
+    max-height: 1.58cm !important;
+  }
+
+  .multi-line {
+    padding: 0.2cm 0.3cm !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: left !important;
+    text-align: left !important;
+    overflow: hidden !important;
+    white-space: pre-line !important;
   }
 
   .manufacturer-address-value .chinese-text {
