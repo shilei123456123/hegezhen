@@ -28,7 +28,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'dist',
+    outDir: 'thirdExt',
     sourcemap: false
   }
 })
