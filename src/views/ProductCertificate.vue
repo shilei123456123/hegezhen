@@ -66,36 +66,36 @@
 
         <tr>
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
-            <div class="cell-content">
-              <div class="chinese-text" style="margin-top: -0.2cm">发动机编号&nbsp;&nbsp;&nbsp;</div>
+            <div class="cell-content" style="margin-top: -0.2cm">
+              <div class="chinese-text">发动机编号&nbsp;&nbsp;&nbsp;</div>
               <div class="english-text">{{ cert.ENGINE_NO1}}</div>
             </div>
           </td>
           <td class="value-cell" colspan="6" :style="getCellStyle(1.58)">
 
-                          <div class="chinese-text2" style="margin-left: 0.3cm; /* 文本左对齐 */line-height: 0.79cm; max-height: 1.58cm; overflow: hidden !important; white-space: pre-line; width: 100%;">{{ cert.ENGINE_NO}}</div>
+                          <div class="chinese-text2" style="margin-left: 0.3cm; margin-top: -0.2cm; /* 文本左对齐 */line-height: 0.79cm; max-height: 1.58cm; overflow: hidden !important; white-space: pre-line; width: 100%;">{{ cert.ENGINE_NO}}</div>
 
           </td>
           <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
-            <div class="cell-content">
-              <div class="chinese-text" style="margin-top: -0.2cm">底盘编号</div>
+            <div class="cell-content" style="margin-top: -0.2cm">
+              <div class="chinese-text">底盘编号</div>
               <div class="english-text">{{ cert.CHASSIS_NO1}}</div>
             </div>
           </td>
           <td class="value-cell" colspan="6" :style="getCellStyle(1.58)">
 
-                          <div class="chinese-text2" style="margin-left: 0.3cm; /* 文本左对齐 */line-height: 0.79cm; max-height: 1.58cm; overflow: hidden !important; white-space: pre-line; width: 100%;">{{ cert.CHASSIS_NO}}</div>
+                          <div class="chinese-text2" style="margin-left: 0.3cm; margin-top: -0.2cm; /* 文本左对齐 */line-height: 0.79cm; max-height: 1.58cm; overflow: hidden !important; white-space: pre-line; width: 100%;">{{ cert.CHASSIS_NO}}</div>
 
           </td>
         </tr>
 
         <tr>
           <td class="inspection-cell" colspan="24" :style="getCellStyle(2.37)">
-            <div class="cell-content">
-              <div class="chinese-text" style="margin-top: -0.2cm">
+            <div class="cell-content" style="margin-top: -0.2cm">
+              <div class="chinese-text">
                 经检验，本产品符合 {{ cert.INSPECTION_CERTIFICATION }} 规定，确认合格，准予出厂。
               </div>
-              <div class="english-text" style="margin-top: 0.2cm">
+              <div class="english-text">
                 <div>{{ cert.INSPECTION_CERTIFICATION1 }}
                 </div>
               </div>
