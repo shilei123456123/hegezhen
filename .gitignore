@@ -1,6 +1,7 @@
 # 依赖目录
 node_modules/
 dist/
+thirdExt/
 
 # 环境变量
 .env

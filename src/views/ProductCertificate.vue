@@ -76,13 +76,13 @@
                           <div class="chinese-text2" style="margin-left: 0.3cm; margin-top: -0.2cm; /* 文本左对齐 */line-height: 0.79cm; max-height: 1.58cm; overflow: hidden !important; white-space: pre-line; width: 100%;">{{ cert.ENGINE_NO}}</div>
 
           </td>
-          <td class="label-cell" colspan="6" :style="getCellStyle(1.58)">
+          <td class="label-cell" colspan="5" :style="getCellStyle(1.58)">
             <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text">底盘编号</div>
               <div class="english-text">{{ cert.CHASSIS_NO1}}</div>
             </div>
           </td>
-          <td class="value-cell" colspan="6" :style="getCellStyle(1.58)">
+          <td class="value-cell" colspan="7" :style="getCellStyle(1.58)">
 
                           <div class="chinese-text2" style="margin-left: 0.3cm; margin-top: -0.2cm; /* 文本左对齐 */line-height: 0.79cm; max-height: 1.58cm; overflow: hidden !important; white-space: pre-line; width: 100%;">{{ cert.CHASSIS_NO}}</div>
 
@@ -128,13 +128,13 @@
           <td class="value-cell" colspan="6" :style="getCellStyle(2.37)">
             <div class="cell-content" style="margin-top: -0.2cm">&nbsp;</div>
           </td>
-          <td class="label-cell" colspan="6" :style="getCellStyle(2.37)">
+          <td class="label-cell" colspan="5" :style="getCellStyle(2.37)">
             <div class="cell-content" style="margin-top: -0.2cm">
-              <div class="chinese-text">质检机构负责人</div>
-              <div class="english-text">{{ cert.QUALITY_INSPECTION_MANAGER1 }}</div>
+              <div class="chinese-text no-wrap">质检机构负责人</div>
+              <div class="english-text ">{{ cert.QUALITY_INSPECTION_MANAGER1 }}</div>
             </div>
           </td>
-          <td class="value-cell" colspan="6" :style="getCellStyle(2.37)">
+          <td class="value-cell" colspan="7" :style="getCellStyle(2.37)">
             <div class="cell-content" style="margin-top: -0.2cm">&nbsp;</div>
           </td>
         </tr>
@@ -162,7 +162,6 @@
             <div class="cell-content multi-line" style="margin-top: -0.2cm">
               <template v-if="cert.MANUFACTURE_LICENSE_EXPIRY_DATE">
                 <div class="chinese-text">{{ formatDateCN(cert.MANUFACTURE_LICENSE_EXPIRY_DATE) }}</div>
-                <div class="english-text">{{ formatDateEN(cert.MANUFACTURE_LICENSE_EXPIRY_DATE) }}</div>
               </template>
               <template v-else>
                 <div class="chinese-text">────────</div>
@@ -363,7 +362,7 @@ const printCertificate = async () => {
   if (certificateIds.length > 0) {
     try {
       await certificateApi.updatePrintStatus(certificateIds);
-      //window.location.href = 'about:blank';
+      window.location.href = 'about:blank';
     } catch (error) {
       // 打印状态更新失败不影响用户体验，仅记录错误
       console.error('更新打印状态失败:', error);
@@ -603,11 +602,15 @@ onMounted(async () => {
 }
 
 .english-text {
+  word-break: break-all;
   /* 英文文本 - 定义英文文本的基本样式 */
   font-family: 'Times New Roman', serif; /* 使用Times New Roman字体 */
   font-size: 12pt; /* 字体大小12pt */
   line-height: 1.0; /* 行高1.0 */
-  margin: 0; /* 清除默认外边距 */
+  margin-top: 0.15cm; /* 与中文文本之间保留0.15cm间距 */
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
   color: #000; /* 黑色文本 */
   text-align: left; /* 文本左对齐 */
   padding: 0; /* 清除默认内边距 */
@@ -682,7 +685,10 @@ onMounted(async () => {
     font-family: 'Times New Roman', serif !important;
     font-size: 12pt !important;
     line-height: 1.0 !important;
-    margin: 0 !important;
+    margin-top: 0.15cm !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     color: #000 !important;
     text-align: left !important;
   }
