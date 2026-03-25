@@ -362,7 +362,8 @@ const printCertificate = async () => {
   if (certificateIds.length > 0) {
     try {
       await certificateApi.updatePrintStatus(certificateIds);
-      window.location.href = 'about:blank';
+      // 替换当前历史记录，不会留下后退记录
+      window.location.replace('about:blank');
     } catch (error) {
       // 打印状态更新失败不影响用户体验，仅记录错误
       console.error('更新打印状态失败:', error);
@@ -602,7 +603,7 @@ onMounted(async () => {
 }
 
 .english-text {
-  word-break: break-all;
+
   /* 英文文本 - 定义英文文本的基本样式 */
   font-family: 'Times New Roman', serif; /* 使用Times New Roman字体 */
   font-size: 12pt; /* 字体大小12pt */
