@@ -128,13 +128,13 @@
           <td class="value-cell" colspan="6" :style="getCellStyle(2.37)">
             <div class="cell-content" style="margin-top: -0.2cm">&nbsp;</div>
           </td>
-          <td class="label-cell" colspan="5" :style="getCellStyle(2.37)">
+          <td class="label-cell" colspan="6" :style="getCellStyle(2.37)">
             <div class="cell-content" style="margin-top: -0.2cm">
               <div class="chinese-text no-wrap">质检机构负责人</div>
               <div class="english-text ">{{ cert.QUALITY_INSPECTION_MANAGER1 }}</div>
             </div>
           </td>
-          <td class="value-cell" colspan="7" :style="getCellStyle(2.37)">
+          <td class="value-cell" colspan="6" :style="getCellStyle(2.37)">
             <div class="cell-content" style="margin-top: -0.2cm">&nbsp;</div>
           </td>
         </tr>
